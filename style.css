@@ -1,0 +1,139 @@
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+  font-family: 'Roboto Condensed', sans-serif;
+  height: 100%;
+  overflow: hidden;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    color: #fff;
+    height: 100%;
+    background: #195383; /* Old browsers */
+    background: -moz-linear-gradient(top,  #195383 40%, #1e7392 60%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  #195383 40%,#1e7392 60%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  #195383 40%,#1e7392 60%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#195383', endColorstr='#1e7392',GradientType=0 ); /* IE6-9 */
+    text-align: center;
+    
+}
+
+.site, .contact {
+    position: absolute;
+}
+.site {
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background: url(background.jpg) no-repeat 50% 100%;
+    padding:0;
+}
+
+.site__name {
+    max-width: 100%;
+    margin-top: 4rem;
+}
+
+.allcaps {
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+.contact-link {
+    margin-bottom: 2rem;
+}
+
+.contact {
+    left: 1rem;
+    right: 1rem;
+    bottom: 20%;
+}
+
+.contact-details i {
+    font-style: normal;
+    padding: 0 1rem;
+}
+
+.contact-details a {
+    color: #fff !important;
+    text-decoration: none !important;
+}
+
+.button {
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+    border: 3px solid #fff;
+    background-color: rgba(255,255,255,0.2);
+    font-weight: bold;
+    font-size: 1.5rem;
+    padding: 0.75rem 2rem;
+    margin: 0 auto;
+}
+
+
+@media (max-height: 1090px) {
+    .site {
+        background-position: 50% 50%;
+    }
+}
+
+@media (max-height: 940px) {
+    .site {
+        background-position: 50% 100%;
+    }
+    .contact {
+        bottom: 8%;
+    }
+}
+
+@media (max-width: 1024px) {
+    .site {
+        background-size: 100%;
+    }
+}
+
+
+@media (max-width: 870px) {
+    html {
+        font-size: 14px;
+    }
+    .site {
+        background-size: 200%;
+        background-position: 50% 100%;
+        height: 100vh;
+        margin: 0;
+        top: 0;
+        bottom: 0;
+        padding: 1rem 2rem;
+    }
+    .site__name {
+        margin-top: 4rem;
+    }
+}
+
+@media (max-width: 870px) and (orientation: landscape) { 
+
+    .site {
+        background-size: 100%;
+        background-position: 50% 40%;
+    }
+    .site__name {
+        margin-top: 1%;
+        max-width: 35%;
+    }
+    .contact {
+        bottom: 1rem;
+        top: auto;
+    }
+    .contact-link {
+        margin-bottom: 1rem;
+    }
+
+}
